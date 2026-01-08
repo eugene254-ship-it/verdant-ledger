@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { PrimitiveCard } from "@/components/PrimitiveCard";
 import { EcosystemUnit } from "@/components/EcosystemUnit";
@@ -73,7 +74,9 @@ const Index = () => {
             <span className="font-semibold tracking-tight">Verdant Forge</span>
           </div>
           <div className="flex items-center gap-4">
-            <Button variant="verdant-ghost" size="sm">Documentation</Button>
+            <Link to="/dashboard">
+              <Button variant="verdant" size="sm">Open Dashboard</Button>
+            </Link>
             <Button variant="verdant-outline" size="sm">API Access</Button>
           </div>
         </div>
